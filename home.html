@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Survey Form/home.css">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/168/168570.png">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1 id="title">Survey Form About Wine</h1>
+            <p id="description">What is your consumption?</p>
+        </div>
+
+        <form id="survey-form">
+            <div class="row-form">
+                <label id="name-label" for="name">Name: </label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required="">
+            </div>
+
+            <div class="row-form">
+                <label id="email-label" for="email">Email: </label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required="">
+            </div>
+
+            <div class="row-form">
+                <label id="number-label" for="number">Age: </label>
+                <input id="number" name="age" type="number" placeholder="Enter yor age" required="" min="21" max="120">
+            </div>
+
+            <div class="row-form">
+                <label id="gender-label" for="gender">Gender: </label>
+                <ul>
+                    <li>
+                        <label>
+                            <input name="gender" type="radio" value="male">
+                            Male
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="gender" type="radio" value="female">
+                            Female
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="gender" type="radio" value="other">
+                            Other
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row-form">
+                <label>What are your main activities? </label>
+                <ul>
+                    <li>
+                        <label>
+                            <input class="" name="main-activities" type="checkbox" value="full-time job">
+                            Full-time job
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="main-activities" type="checkbox" value="Part time job">
+                            Part time job
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="main-activities" type="checkbox" value="Student">
+                            Student
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="main-activities" type="checkbox" value="Entrepreneur">
+                            Entrepreneur
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="main-activities" type="checkbox" value="Investor">
+                            Investor
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="main-activities" type="checkbox" value="Other">
+                            Other
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row-form">
+                <label for="label-wine-most-liked">What kind of wine do you like the most?</label>
+                <ul>
+                    <li>
+                        <label>
+                            <input class="wine-most-liked" type="radio" name="wine-most-liked" value="red wine">
+                            Red wine
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="wine-most-liked" type="radio" name="wine-most-liked" value="white wine">
+                            White wine
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="wine-most-liked" type="radio" name="wine-most-liked" value="roses wine">
+                            Rosés wine
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="wine-most-liked" type="radio" name="wine-most-liked" value="generous wine">
+                            Generous wine
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row-form">
+                <label id="spend-unit-label" for="spend-unit">How much do you spend on average per unit?</label>
+                <select id="spend-unit" name="spend-unit">
+                    <option disabled="">Select an option</option>
+                    <option value="25">25$</option>
+                    <option value="75">75$</option>
+                    <option value="125">125$</option>
+                    <option value="175">175$</option>
+                    <option value="225">225$</option>
+                </select>
+            </div>
+
+            <div class="row-form">
+                <label id="dropdown-label" for="wine-consuption-label">What is your wine consumption? </label>
+                <select id="dropdown" name="wine-consuption">
+                    <option disabled="">Select an option</option>
+                    <option value="year">Once a year</option>
+                    <option value="semester">Once a semester</option>
+                    <option value="quarter">Once a quarter</option>
+                    <option value="month">Once a month</option>
+                    <option value="fortnight">Once a fortnight</option>
+                    <option value="week">Once a week</option>
+                    <option value="day">Once a day</option>
+                </select>
+            </div>
+
+            <div class="row-form">
+                <label>Help us improve, leave a message.</label>
+                <textarea name="message" rows="5" cols="20" placeholder="Enter your message here..."></textarea>
+            </div>
+
+            <div class="row-form">
+                <input class="btn" id="submit" type="submit" value="Submit">
+                <input class="btn" id="reset" type="reset" value="Cancel">
+            </div>
+            
+        </form>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
